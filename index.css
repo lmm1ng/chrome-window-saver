@@ -21,6 +21,7 @@
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .saved-sessions .session:hover {

@@ -103,7 +103,7 @@ window.addEventListener('DOMContentLoaded', () => {
         .addEventListener('click', e => {
             const sessionId = e.target.closest('.session').getAttribute('data-id')
 
-            if (e.target.tagName === 'LI') {
+            if (e.target.tagName === 'LI' || e.target.classList.contains('session')) {
                 getSessionById(sessionId).then(session => chrome.windows.create({url: session.urls}))
             }
 
