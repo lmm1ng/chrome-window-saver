@@ -13,16 +13,18 @@
 .saved-sessions {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 2px;
 }
 
 .saved-sessions .session {
+    padding: 5px;
+    border-radius: 3px;
     display: flex;
     justify-content: space-between;
 }
 
-.saved-sessions .session li:hover {
-    background-color: gray;
+.saved-sessions .session:hover {
+    background-color: #e6e6e6;
 }
 
 .saved-sessions .session .buttons {
